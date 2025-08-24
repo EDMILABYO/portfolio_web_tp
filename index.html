@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groupe 3 LIAGE - Designers & Développeurs Créatifs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Groupe 3</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#equipe">Notre Équipe</a></li>
+                <li><a href="about.html">À propos de nous</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Hero avec Carousel -->
+    <section id="accueil" class="hero-section">
+        <div class="carousel-container">
+            <div class="carousel-content">
+                <div class="carousel-text">
+                    <div class="hero-badge">
+                        <span class="badge-text">🚀 Équipe Créative</span>
+                    </div>
+                    <h1 class="hero-title">Nous créons des expériences digitales exceptionnelles</h1>
+                    <p class="hero-description">Une équipe de 5 passionnés spécialisés en design, développement et innovation. Nous transformons vos idées en réalité.</p>
+                    <div class="hero-buttons">
+                        <button class="cta-button primary">Découvrir nos projets</button>
+                        <button class="cta-button secondary">Rencontrer l'équipe</button>
+                    </div>
+                </div>
+                <div class="carousel-images">
+                    <div class="image-slide active">
+                        <img src="img/equ.jpg" alt="Équipe au travail">
+                    </div>
+                    <div class="image-slide">
+                        <img src="img/Awule 2.jpg" alt="Collaboration créative">
+                    </div>
+                    <div class="image-slide">
+                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop" alt="Innovation technologique">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="carousel-indicators">
+                <span class="indicator active" data-slide="0"></span>
+                <span class="indicator" data-slide="1"></span>
+                <span class="indicator" data-slide="2"></span>
+            </div>
+        </div>
+        
+        <!-- Données du carousel pour les descriptions dynamiques -->
+        <script type="application/json" id="carousel-data">
+        {
+            "slides": [
+                {
+                    "badge": "🚀 Équipe Créative",
+                    "title": "Nous créons des expériences digitales exceptionnelles",
+                    "description": "Une équipe de 5 passionnés spécialisés en design, développement et innovation. Nous transformons vos idées en réalité."
+                },
+                {
+                    "badge": "💡 Innovation Continue",
+                    "title": "Design & Développement de pointe",
+                    "description": "Nous combinons créativité et technologie pour créer des solutions innovantes qui transforment votre vision en réalité digitale."
+                },
+                {
+                    "badge": "🎯 Excellence Technique",
+                    "title": "Solutions sur mesure pour votre succès",
+                    "description": "Chaque projet est une opportunité d'exceller. Notre expertise technique et notre approche créative garantissent des résultats exceptionnels."
+                }
+            ]
+        }
+        </script>
+    </section>
+
+    <!-- Section Marquee -->
+    <section class="marquee-section">
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <span>🎨 Design • 💻 Développement • 🚀 Innovation • 💡 Créativité • 🎯 Excellence • 🎨 Design • 💻 Développement • 🚀 Innovation • 💡 Créativité • 🎯 Excellence</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Notre Équipe -->
+    <section id="equipe" class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">👥 Notre Équipe</div>
+                <h2>5 talents, 1 vision</h2>
+                <p>Découvrez les passionnés qui composent notre équipe créative</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="img/Awule.jpg" alt="Senya Awule">
+                        <div class="member-socials">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Senya Awule</h3>
+                        <span class="member-role">Lead Développeur Full-Stack</span>
+                        <p>Spécialiste React, Node.js et architecture cloud. 8+ ans d'expérience.</p>
+                        <div class="member-skills">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>AWS</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="img/Thesy.jpg" alt="Thesy Kapinga">
+                        <div class="member-socials">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                            <a href="#"><i class="fab fa-behance"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Thesy Kapinga</h3>
+                        <span class="member-role">Designer UI/UX Senior</span>
+                        <p>Passionnée d'expérience utilisateur et de design thinking. 6+ ans d'expérience.</p>
+                        <div class="member-skills">
+                            <span>Figma</span>
+                            <span>UX Research</span>
+                            <span>Prototyping</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="img/Thibaut.jpg" alt="Thibaut Bujiriri">
+                        <div class="member-socials">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-stack-overflow"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Thibaut Bujiriri</h3>
+                        <span class="member-role">Développeur Mobile</span>
+                        <p>Expert iOS et Android natif. Passionné de nouvelles technologies mobiles.</p>
+                        <div class="member-skills">
+                            <span>Swift</span>
+                            <span>Kotlin</span>
+                            <span>Flutter</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="img/Jemimah.jpg" alt="Jemimah Seraju">
+                        <div class="member-socials">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Jemimah Seruti</h3>
+                        <span class="member-role">Designer Graphique</span>
+                        <p>Créative et innovante, spécialisée en branding et identité visuelle.</p>
+                        <div class="member-skills">
+                            <span>Illustrator</span>
+                            <span>Photoshop</span>
+                            <span>Branding</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="img/Edouard.jpg" alt="Edouard Milabyo">
+                        <div class="member-socials">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-dev"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Edouard Milabyo</h3>
+                        <span class="member-role">Développeur Backend</span>
+                        <p>Spécialiste des bases de données et de l'architecture serveur. 5+ ans d'expérience.</p>
+                        <div class="member-skills">
+                            <span>Python</span>
+                            <span>PostgreSQL</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">💼 Nos Projets</div>
+                <h2>Découvrez nos réalisations</h2>
+                <p>Une sélection de nos meilleurs projets réalisés en équipe</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" alt="Projet E-commerce">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">E-commerce</div>
+                        <h3>Plateforme de vente en ligne</h3>
+                        <p>Application web moderne avec paiements sécurisés et gestion des stocks.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Stripe</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop" alt="App Mobile">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Mobile</div>
+                        <h3>Application de fitness</h3>
+                        <p>App mobile cross-platform avec suivi des entraînements et statistiques.</p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>Firebase</span>
+                            <span>ML Kit</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" alt="Dashboard">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Dashboard</div>
+                        <h3>Tableau de bord analytique</h3>
+                        <p>Interface d'administration avec visualisation de données en temps réel.</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>D3.js</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">🛠️ Nos Compétences</div>
+                <h2>Technologies & Outils</h2>
+                <p>Notre expertise technique couvre l'ensemble du spectre du développement moderne</p>
+            </div>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3>Frontend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-vuejs"></i>
+                            <span>Vue.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-angular"></i>
+                            <span>Angular</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <span>TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>Backend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>Design</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-figma"></i>
+                            <span>Figma</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-adobe"></i>
+                            <span>Adobe Suite</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-palette"></i>
+                            <span>Sketch</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-paint-brush"></i>
+                            <span>Procreate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Statistiques -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">Projets Réalisés</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="25">0</div>
+                    <div class="stat-label">Clients Satisfaits</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="3">0</div>
+                    <div class="stat-label">Années d'Expérience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-label">Technologies Maîtrisées</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">📞 Contact</div>
+                <h2>Travaillons ensemble</h2>
+                <p>Prêt à démarrer votre projet ? Parlons-en !</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>groupe3@teamportfolio.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Téléphone</h4>
+                            <p>+243 99 999 999</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Adresse</h4>
+                            <p>RD.Congo, Goma</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Horaires</h4>
+                            <p>Lun-Ven: 9h-18h</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Votre email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Sujet du projet" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Décrivez votre projet..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span>Envoyer le message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TeamPortfolio</h3>
+                    <p>Une équipe créative de 5 passionnés dédiés à l'excellence et à l'innovation dans le développement digital.</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Développement Web</a></li>
+                        <li><a href="#">Applications Mobiles</a></li>
+                        <li><a href="#">Design UI/UX</a></li>
+                        <li><a href="#">Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Équipe</h3>
+                    <ul>
+                        <li><a href="#">Senya Awule</a></li>
+                        <li><a href="#">Thesy Kapinga</a></li>
+                        <li><a href="#">Thibaut Bujiriri</a></li>
+                        <li><a href="#">Jemimah Seruti</a></li>
+                        <li><a href="#">Edouard Milabyo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="mailto:declandbb@gmail.com">groupe3@teamportfolio.com</a></li>
+                        <li><a href="tel:+24399999999">+243 99 999 999</a></li>
+                        <li><a href="#">RD.congo, Goma</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2022-2025 TeamPortfolio. Tous droits réservés. | Créé avec ❤️ par notre équipe</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
